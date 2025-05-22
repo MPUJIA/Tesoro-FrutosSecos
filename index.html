@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TESORO Frutos Secos Naturales</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=El+Messiri:wght@400..700&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="icon" href="./static/img/favicon.ico"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="static/img/ICON/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/img/ICON/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/img/ICON/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <header>
+    </div>
+
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="./static/img/Logo.png" alt="Tesoro frutos secos">
+      </a>
+    </div>
+
+    <nav class="menu">
+      <h1 class="tesoro">Bienvenido a TESORO, la mejor selección de Frutos Secos Naturales</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <!-- <h2>Bienvenidos a Frutos Secos Naturales</h2> -->
+      <p>La mejor selección de frutos secos saludables y deliciosos.</p>
+      <img src="./static/img/Header Otoño.png" alt="Frutos secos variados" width="700" height="300">
+    </section>
+
+    <section id="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="productos-container">
+
+        <div class="card">
+          <div class="imagen-wrapper">
+            <img class="img-normal" src="./static/img/Almendras01.jpg" alt="Almendras">
+            <img class="img-hover" src="./static/img/Almendras02.webp" alt="Almendras Hover">
+          </div>
+          <h3>Almendras</h3>
+          <p>Ricas en proteínas y grasas saludables.</p>
+          <button class="boton-comprar">Comprar</button>
+        </div>
+
+        <div class="card">
+          <div class="imagen-wrapper">
+            <img class="img-normal" src="./static/img/Nueces01.jpg" alt="Nueces">
+            <img class="img-hover" src="./static/img/Nueces02.webp" alt="Nueces Hover">
+          </div>
+          <h3>Nueces</h3>
+          <p>Excelentes para el corazón y el cerebro.</p>
+          <button class="boton-comprar">Comprar</button>
+        </div>
+
+        <div class="card">
+          <div class="imagen-wrapper">
+            <img class="img-normal" src="./static/img/Avellanas01.jpg" alt="Avellanas">
+            <img class="img-hover" src="./static/img/Avellanas02.webp" alt="Avellanas Hover">
+          </div>
+          <h3>Avellanas</h3>
+          <p>Ideales para snacks o repostería.</p>
+          <button class="boton-comprar">Comprar</button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="resenas">
+      <h2>Reseñas de Clientes</h2>
+      <div class="resenas-grid">
+        <div class="resena">
+          <p>"Excelentes productos, siempre frescos."</p>
+          <strong>- María G.</strong>
+        </div>
+        <div class="resena">
+          <p>"Entrega rápida y buen precio. ¡Recomendado!"</p>
+          <strong>- Juan P.</strong>
+        </div>
+        <div class="resena">
+          <p>"Los frutos secos más ricos que he probado."</p>
+          <strong>- Carla M.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form action="https://formspree.io/f/mjkwdkya" method="POST">
+
+        <label for="category">Categoría:</label>
+        <select id="category" name="category">
+          <option value="">Seleccionar categoría...</option>
+          <option value="Consulta">Consulta</option>
+          <option value="Sugerencia">Sugerencia</option>
+          <option value="Reclamo">Reclamo</option>
+        </select>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su Email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Opcinalmente puede ingresar un mensaje"
+          required></textarea>
+
+        <button type="submit">Enviar</button>
+        <br>
+        <div class="whatsapp">
+
+          <p>Si querés comunicarte por WhatsApp
+            <a href="https://wa.me/15559999999">
+              <img class="whatsapp-icon" width="50" height="50" alt="Whatsapp"
+                src="data:image/png;base64,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">
+            </a>
+          </p>
+        </div>
+
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+     <!-- <iframe width="300" height="200" src="https://www.youtube.com/embed/3GwjfUFyY6M" title="Video de presentación"
+      allowfullscreen></iframe> -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MmwwXPPFDd8?si=40Kirw_D9NQk0bwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>&copy; 2025 - Tesoro Frutos Secos Naturales. Todos los derechos reservados.</p>
+      <p>C25016 - Front-End JS - Lunes 17 a 19h</p>
+      
+  </footer>
+</body>
+
+</html>
