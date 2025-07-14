@@ -5,10 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TESORO Frutos Secos Naturales</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href=".//css/styles.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=El+Messiri:wght@400..700&display=swap"
     rel="stylesheet">
@@ -16,8 +13,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="static/img/ICON/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="static/img/ICON/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="static/img/ICON/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
 </head>
+
+
 
 <body>
   <header>
@@ -37,11 +36,18 @@
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
+
+
+    <div id="carrito" class="carrito">
+      <a href="carrito.html" id="abrir-carrito" class="carrito-link boton-carrito">
+        🛒 (<span id="cantidad-carrito">0</span>)
+      </a>
+    </div>
+
   </header>
 
   <main>
     <section id="inicio">
-      <!-- <h2>Bienvenidos a Frutos Secos Naturales</h2> -->
       <h2>La mejor selección de frutos secos saludables y deliciosos.</h2>
       <img src="./static/img/Header_Otoño.png" alt="Frutos secos variados" width="700" height="300">
     </section>
@@ -49,37 +55,7 @@
     <section id="productos">
       <h2>Nuestros Productos</h2>
       <div class="productos-container">
-
-        <div class="card">
-          <div class="imagen-wrapper">
-            <img class="img-normal" src="./static/img/Almendras01.jpg" alt="Almendras">
-            <img class="img-hover" src="./static/img/Almendras02.webp" alt="Almendras Hover">
-          </div>
-          <h3>Almendras</h3>
-          <p>Ricas en proteínas y grasas saludables.</p>
-          <button class="boton-comprar">Comprar</button>
-        </div>
-
-        <div class="card">
-          <div class="imagen-wrapper">
-            <img class="img-normal" src="./static/img/Nueces01.jpg" alt="Nueces">
-            <img class="img-hover" src="./static/img/Nueces02.webp" alt="Nueces Hover">
-          </div>
-          <h3>Nueces</h3>
-          <p>Excelentes para el corazón y el cerebro.</p>
-          <button class="boton-comprar">Comprar</button>
-        </div>
-
-        <div class="card">
-          <div class="imagen-wrapper">
-            <img class="img-normal" src="./static/img/Avellanas01.jpg" alt="Avellanas">
-            <img class="img-hover" src="./static/img/Avellanas02.webp" alt="Avellanas Hover">
-          </div>
-          <h3>Avellanas</h3>
-          <p>Ideales para snacks o repostería.</p>
-          <button class="boton-comprar">Comprar</button>
-        </div>
-
+        <!-- Los productos se insertan dinámicamente -->
       </div>
     </section>
 
@@ -142,13 +118,20 @@
   </main>
 
   <footer>
-     <!-- <iframe width="300" height="200" src="https://www.youtube.com/embed/3GwjfUFyY6M" title="Video de presentación"
-      allowfullscreen></iframe> -->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/MmwwXPPFDd8?si=40Kirw_D9NQk0bwM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>&copy; 2025 - Tesoro Frutos Secos Naturales. Todos los derechos reservados.</p>
-      <p>C25016 - Front-End JS - Lunes 17 a 19h</p>
-      
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MmwwXPPFDd8?si=40Kirw_D9NQk0bwM"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>&copy; 2025 - Tesoro Frutos Secos Naturales. Todos los derechos reservados.</p>
+    <p>C25016 - Front-End JS - Lunes 17 a 19h</p>
+
   </footer>
+
+
+
+  <script src="./js/productos_lista.js"></script>
+  <script src="./js/productos_renderiza.js"></script>
+  <script src="./js/carrito.js"></script>
 </body>
 
 </html>
